@@ -16,7 +16,9 @@ class Solution(object):
                 r+=1
             else:
                 profit = prices[r] - prices[l]
-                maxP = max(maxP, profit)
+                if maxP<profit:
+                    maxP=profit
+                # maxP = max(maxP, profit)
                 r+=1
         return maxP
         
