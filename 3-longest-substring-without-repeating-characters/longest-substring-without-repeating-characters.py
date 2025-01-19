@@ -5,28 +5,26 @@ class Solution(object):
         :rtype: int
         """
 
+
         ls = []
         j = 0
         i = 0
         cnt = 0
         max_ct = 0
 
-        while i<len(s) and j < len(s):
+        while i<len(s) and j<len(s):
             if s[j] not in ls:
                 ls.append(s[j])
                 j+=1
                 cnt+=1
-                if max_ct<cnt:
-                    max_ct= cnt
-                
+                max_ct = max(max_ct, cnt)
             else:
-                ls = []
                 i+=1
-                j = i
-                cnt = 0
+                ls.pop(0)
+                cnt-=1
+                
         return max_ct
 
             
 
-        
         
