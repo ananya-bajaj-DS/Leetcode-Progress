@@ -16,7 +16,9 @@ class Solution(object):
                 ls.append(s[j])
                 j+=1
                 cnt+=1
-                max_ct = max(max_ct, cnt)
+                if max_ct<cnt:
+                    max_ct= cnt
+                
             else:
                 ls = []
                 i+=1
