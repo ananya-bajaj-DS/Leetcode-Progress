@@ -20,6 +20,7 @@ class Solution(object):
                 max_ct = max(max_ct, cnt)
             else:
                 i+=1
+
                 ls.pop(0)
                 cnt-=1
                 
