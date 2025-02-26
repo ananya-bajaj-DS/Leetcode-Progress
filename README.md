@@ -9,6 +9,7 @@ Hi! I am trying to keep a track of the questions I have done on Leetcode, along 
 5. Product of Array Except Self
 6. Valid Anagram
 7. Group Anagrams
+8. Maximum Units on a Truck
 
 ### Two Pointers:
 1. Valid Palindrome
