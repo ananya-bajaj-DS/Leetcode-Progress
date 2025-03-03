@@ -17,7 +17,9 @@ class Solution(object):
                 count[s[l]] -= 1
                 l+=1
 
-            max_len = max((r-l+1), max_len )
+            if (r-l+1)>max_len:
+                max_len = r-l+1
+        
 
         return max_len
 
